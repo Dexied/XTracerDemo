@@ -1,0 +1,1 @@
+B:\UnrealEngine\UE_5.5\Engine\Build\BatchFiles\RunUAT.bat BuildPlugin -Plugin="B:\Projects\XTracerDemo\Plugins\XTracer\XTracer.uplugin" -Package="B:\Projects\XTracerDemo\Builds\XTracer" -Rocket -2019
