@@ -3,10 +3,10 @@ Using bundled DotNet SDK version: 10.0 win-x64
 Starting AutomationTool...
 Parsing command line: BuildPlugin -Plugin=B:\Projects\XTracerDemo\Plugins\XTracer\XTracer.uplugin -Package=B:\Projects\XTracerDemo\Builds\XTracer -Rocket -2019
 Initializing script modules...
-Total script module initialization time: 0.16 s.
+Total script module initialization time: 0.19 s.
 Using B:\VisualStudio\Community\MSBuild\Current\Bin\MSBuild.exe
 Executing commands...
-Copying 89 file(s) using max 64 thread(s)
+Copying 111 file(s) using max 64 thread(s)
 Reading plugin from B:\Projects\XTracerDemo\Builds\XTracer\HostProject\Plugins\XTracer\XTracer.uplugin...
 Building plugin for host platforms: Win64
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\XTracerDemo\Builds\XTracer\HostProject\HostProject.uproject" -plugin="B:\Projects\XTracerDemo\Builds\XTracer\HostProject\Plugins\XTracer\XTracer.uplugin" -noubtmakefiles -manifest="B:\Projects\XTracerDemo\Builds\XTracer\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt"
@@ -23,12 +23,12 @@ Building UnrealEditor...
 Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
   Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
 Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[Adaptive Build] Excluded from XTracer unity file: XTracer.cpp, XTracerComponent.cpp, XTracerInterface.cpp
 [Adaptive Build] Excluded from XTracerEditor unity file: XTracerComponentVisualizer.cpp, XTracerEditor.cpp
+[Adaptive Build] Excluded from XTracer unity file: XTracer.cpp, XTracerComponent.cpp, XTracerInterface.cpp
 =================================
 Using Unreal Build Accelerator local executor to run 15 action(s)
   CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 15.4 GB/67.91 GB committed
+  Memory 63.91 GB physical, 21.82 GB/67.91 GB committed
   UBA Storage capacity 40 GB
 [1/15] Compile Resource [x64] Default.rc2
 [2/15] Compile Resource [x64] Default.rc2
@@ -46,13 +46,13 @@ Using Unreal Build Accelerator local executor to run 15 action(s)
 [14/15] Link [x64] UnrealEditor-XTracerEditor.dll
 [15/15] WriteMetadata UnrealEditor.target [NoUba]
 
-Total time in Unreal Build Accelerator local executor: 37.79 seconds
+Total time in Unreal Build Accelerator local executor: 41.84 seconds
 Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
 
 Result: Succeeded
-Total execution time: 45.80 seconds
-Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 11.3kb
-Took 46,16s to run dotnet.exe, ExitCode=0
+Total execution time: 78.29 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 15.1kb
+Took 78,70s to run dotnet.exe, ExitCode=0
 Building plugin for target platforms: Win64
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\XTracerDemo\Builds\XTracer\HostProject\HostProject.uproject" -plugin="B:\Projects\XTracerDemo\Builds\XTracer\HostProject\Plugins\XTracer\XTracer.uplugin" -noubtmakefiles -manifest="B:\Projects\XTracerDemo\Builds\XTracer\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt"
 Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt
@@ -71,20 +71,20 @@ Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MS
 =================================
 Using Unreal Build Accelerator local executor to run 4 action(s)
   CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 14.9 GB/67.91 GB committed
+  Memory 63.91 GB physical, 24 GB/67.91 GB committed
   UBA Storage capacity 40 GB
 [1/4] Compile [x64] XTracer.cpp
 [2/4] Compile [x64] XTracerInterface.cpp
 [3/4] Compile [x64] Module.XTracer.cpp
 [4/4] Compile [x64] XTracerComponent.cpp
 
-Total time in Unreal Build Accelerator local executor: 10.55 seconds
+Total time in Unreal Build Accelerator local executor: 11.10 seconds
 Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame.exe
 
 Result: Succeeded
-Total execution time: 13.72 seconds
-Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 6.2kb
-Took 13,91s to run dotnet.exe, ExitCode=0
+Total execution time: 14.37 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 6.3kb
+Took 14,58s to run dotnet.exe, ExitCode=0
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Shipping -Project="B:\Projects\XTracerDemo\Builds\XTracer\HostProject\HostProject.uproject" -plugin="B:\Projects\XTracerDemo\Builds\XTracer\HostProject\Plugins\XTracer\XTracer.uplugin" -noubtmakefiles -manifest="B:\Projects\XTracerDemo\Builds\XTracer\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt"
 Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt
 Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
@@ -101,22 +101,22 @@ Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MS
 =================================
 Using Unreal Build Accelerator local executor to run 4 action(s)
   CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 14.52 GB/67.91 GB committed
+  Memory 63.91 GB physical, 21.78 GB/67.91 GB committed
   UBA Storage capacity 40 GB
 [1/4] Compile [x64] XTracer.cpp
 [2/4] Compile [x64] XTracerInterface.cpp
 [3/4] Compile [x64] Module.XTracer.cpp
 [4/4] Compile [x64] XTracerComponent.cpp
 
-Total time in Unreal Build Accelerator local executor: 8.48 seconds
+Total time in Unreal Build Accelerator local executor: 9.49 seconds
 Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame-Win64-Shipping.exe
 
 Result: Succeeded
-Total execution time: 10.08 seconds
-Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 5.8kb
-Took 10,24s to run dotnet.exe, ExitCode=0
+Total execution time: 11.29 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 6.0kb
+Took 11,48s to run dotnet.exe, ExitCode=0
 Reading filter rules from B:\Projects\XTracerDemo\Builds\XTracer\HostProject\Plugins\XTracer\Config\FilterPlugin.ini
 Loading FilterPluginWin64.ini
 BUILD SUCCESSFUL
-AutomationTool executed for 0h 1m 11s
+AutomationTool executed for 0h 1m 45s
 AutomationTool exiting with ExitCode=0 (Success)
